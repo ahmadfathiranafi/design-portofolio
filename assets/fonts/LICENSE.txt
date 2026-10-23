@@ -1,0 +1,3 @@
+Archivo (Omnibus-Type) dan IBM Plex Mono (IBM) dilisensikan di bawah SIL Open Font License 1.1.
+https://openfontlicense.org
+File di folder ini adalah subset latin dari versi Google Fonts.

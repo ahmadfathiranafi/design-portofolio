@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmad Fathir Anafi</title>
+<meta name="description" content="Portofolio Ahmad Fathir Anafi, graphic designer dan mahasiswa Teknik Grafika & Penerbitan di Politeknik Negeri Jakarta.">
+<meta name="theme-color" content="#ebecea">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Ahmad Fathir Anafi — Graphic Designer">
+<meta property="og:description" content="Social media, editorial, poster, dan 3D. 34 proyek, 133 desain.">
+<meta property="og:image" content="assets/work/bem-65.webp">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/archivo.var.woff2" crossorigin>
+<link rel="preload" as="image" href="assets/foto.webp" fetchpriority="high">
+<script>
+/* lite = gerak dikurangi, hemat data, atau HP spek rendah: tanpa loader & animasi berat */
+(function () {
+  var n = navigator, c = n.connection || {};
+  var lite = matchMedia('(prefers-reduced-motion: reduce)').matches || /preview|lite/.test(location.search) ||
+    (n.deviceMemory && n.deviceMemory <= 3) || (n.hardwareConcurrency && n.hardwareConcurrency <= 4) || c.saveData || /2g/.test(c.effectiveType || '');
+  var r = document.documentElement, seen = false;
+  try { seen = !!sessionStorage.getItem('fa:seen'); } catch (e) {}
+  r.classList.add(lite ? 'lite' : 'js');
+  if (seen) r.classList.add('seen');
+  // pengaman: kalau skrip gagal jalan, tampilkan semua konten tanpa animasi
+  if (!lite) setTimeout(function () { if (!r.classList.contains('ready')) { r.classList.remove('js'); r.classList.add('lite'); } }, 4000);
+})();
+</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-reg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="11" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M20 2v36M2 20h36" stroke="currentColor" stroke-width="1.5"/></svg>
+  <div class="loader-row">
+    <span class="loader-name">Ahmad Fathir Anafi<br><span class="loader-sub">Graphic Designer</span></span>
+    <span class="loader-count"><span id="loaderCount">0</span>%</span>
+  </div>
+  <div class="loader-bar"><i id="loaderBar"></i></div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel">Lihat</span></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<nav class="nav" id="nav" aria-label="Navigasi utama">
+  <div class="wrap nav-row">
+    <a class="logo" href="#top">
+      <svg class="reg" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="11" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 2v36M2 20h36" stroke="currentColor" stroke-width="3"/></svg>
+      Fathir Anafi
+    </a>
+    <ul class="nav-links">
+      <li><a href="#karya">Karya</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+    </ul>
+    <a class="nav-cta" href="#kontak"><i class="live"></i>Hubungi</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-stage">
+        <div class="hero-intro">
+          <p class="hero-lede" data-fade>Desain yang enak di layar, siap naik cetak.</p>
+          <div class="hero-ctas" data-fade>
+            <a class="btn" href="#karya">Lihat karya <span aria-hidden="true">↓</span></a>
+            <a class="btn ghost" href="assets/CV-Ahmad-Fathir-Anafi.pdf" download>Unduh CV</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <dl class="hero-facts">
+            <div><dt>Status</dt><dd><i class="live"></i>Open for work</dd></div>
+            <div><dt>Studi</dt><dd>Teknik Grafika &amp; Penerbitan, PNJ</dd></div>
+            <div><dt>Fokus</dt><dd>Social media, editorial, poster, 3D</dd></div>
+          </dl>
+          <figure class="hero-photo">
+            <div class="hero-photo-img"><img src="assets/foto.webp" alt="Foto Ahmad Fathir Anafi" width="450" height="600" fetchpriority="high"></div>
+            <figcaption><span>Fig. 01</span><span>Bekasi, 2026</span></figcaption>
+            <span class="crop tl"></span><span class="crop tr"></span><span class="crop bl"></span><span class="crop br"></span>
+            <a class="hero-badge" href="#karya" aria-label="Lihat karya">
+              <svg viewBox="0 0 100 100" aria-hidden="true"><defs><path id="badgeArc" d="M50 50m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs><text><textPath href="#badgeArc">GRAPHIC DESIGNER · PRINT · 3D · </textPath></text></svg>
+              <span aria-hidden="true">↓</span>
+            </a>
+          </figure>
+        </div>
+
+        <div class="hero-index" data-fade>
+          <p class="eyebrow">Yang saya kerjakan</p>
+          <ol>
+            <li><a href="#karya" data-cat-link="social"><span>Social Media</span><em>70</em></a></li>
+            <li><a href="#karya" data-cat-link="editorial"><span>Editorial</span><em>36</em></a></li>
+            <li><a href="#karya" data-cat-link="poster"><span>Poster &amp; Iklan</span><em>15</em></a></li>
+            <li><a href="#karya" data-cat-link="event"><span>Event</span><em>6</em></a></li>
+            <li><a href="#karya" data-cat-link="3d"><span>3D</span><em>6</em></a></li>
+          </ol>
+        </div>
+      </div>
+
+      <h1 class="hero-name" aria-label="Ahmad Fathir Anafi">
+        <span class="first" data-fade>Ahmad <span class="first-sep">/</span> Graphic Designer, Bekasi</span>
+        <span class="name-row">
+          <span class="line"><span data-split>Fathir</span></span>
+          <span class="line"><span data-split>Anafi</span><sup class="reg-mark">®</sup></span>
+        </span>
+      </h1>
+    </div>
+    <div class="colorbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </header>
+
+  <!-- ============ KARYA (profil ala Instagram) ============ -->
+  <section class="section" id="karya">
+    <div class="wrap">
+      <div class="ig">
+        <div class="sec-head">
+          <p class="eyebrow" data-fade>01 / Karya</p>
+          <h2 class="sec-title" data-reveal>Arsip desain</h2>
+        </div>
+
+        <div class="profile" data-fade>
+          <div class="avatar"><img src="assets/foto-sm.webp" alt="" width="240" height="320" loading="lazy"></div>
+          <div class="profile-info">
+            <p class="profile-name">Ahmad Fathir Anafi</p>
+            <ul class="profile-stats">
+              <li><b>34</b> postingan</li>
+              <li><b>133</b> desain</li>
+              <li><b>5</b> kategori</li>
+            </ul>
+            <p class="profile-bio">Graphic designer · Teknik Grafika &amp; Penerbitan, PNJ<br>Social media, editorial, poster, dan 3D.</p>
+          </div>
+        </div>
+
+        <div class="highlights" id="highlights" role="tablist" aria-label="Kategori"></div>
+
+        <div class="ig-tabs" role="tablist" aria-label="Tampilan">
+          <button class="ig-tab" role="tab" aria-selected="true" data-view="grid">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>Grid
+          </button>
+          <button class="ig-tab" role="tab" aria-selected="false" data-view="feed">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="12" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 19h16M4 22h10" stroke="currentColor" stroke-width="1.6"/></svg>Feed
+          </button>
+        </div>
+
+        <div class="ig-grid" id="grid"></div>
+        <div class="ig-feed" id="feed" hidden></div>
+        <noscript><p>Aktifkan JavaScript untuk melihat galeri karya.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDITORIAL ============ -->
+  <section class="editorial" id="editorial">
+    <div class="wrap">
+      <div class="ed-head">
+        <div>
+          <p class="eyebrow" data-fade>02 / Editorial &amp; cetak</p>
+          <h2 class="sec-title" data-reveal>Dari layar<br>ke kertas</h2>
+        </div>
+        <p class="ed-lede" data-fade>Majalah dan e-book yang dirancang untuk dicetak. Grid, tipografi, dan layout disiapkan sampai tahap prepress.</p>
+      </div>
+
+      <div class="pubs">
+        <button class="pub" data-post="majalah" data-index="0" data-cursor="Baca">
+          <span class="stack">
+            <img class="sheet s3" src="assets/work/majalh-p8-sm.webp" alt="" loading="lazy" width="509" height="720">
+            <img class="sheet s2" src="assets/work/majalh-p4-sm.webp" alt="" loading="lazy" width="509" height="720">
+            <img class="sheet s1" src="assets/work/majalh-p1-sm.webp" alt="Cover majalah FASHION" loading="lazy" width="509" height="720">
+          </span>
+          <span class="pub-info">
+            <span class="pub-title">FASHION — Italian Elegance</span>
+            <span class="pub-spec"><span>Majalah</span><span>A4</span><span>26 halaman</span><span>2025</span></span>
+          </span>
+        </button>
+        <button class="pub" data-post="ebook" data-index="0" data-cursor="Baca">
+          <span class="stack">
+            <img class="sheet s3" src="assets/work/e-book-print-p7-sm.webp" alt="" loading="lazy" width="509" height="720">
+            <img class="sheet s2" src="assets/work/e-book-print-p2-sm.webp" alt="" loading="lazy" width="509" height="720">
+            <img class="sheet s1" src="assets/work/e-book-print-p1-sm.webp" alt="Cover e-book 2D dan 3D Printing" loading="lazy" width="509" height="720">
+          </span>
+          <span class="pub-info">
+            <span class="pub-title">2D &amp; 3D Printing Technology</span>
+            <span class="pub-spec"><span>E-book cetak</span><span>A4</span><span>10 halaman</span><span>2025</span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TENTANG ============ -->
+  <section class="section" id="tentang">
+    <div class="wrap about">
+      <div class="about-lead">
+        <p class="eyebrow" data-fade>03 / Tentang</p>
+        <p class="about-big" data-fade>Saya belajar desain dari dua sisi: tampilan di layar, dan cara tinta jatuh di atas kertas.</p>
+        <div class="about-body" data-fade>
+          <p>Saya mahasiswa Teknologi Rekayasa Cetak dan Grafis 3 Dimensi di Politeknik Negeri Jakarta, konsentrasi Teknik Grafika dan Penerbitan. Sejak OSIS SMK sampai Divisi Desain Kreator BEM PNJ, pekerjaan saya selalu di publikasi dan multimedia.</p>
+          <p>Saya terbiasa bekerja dengan tenggat, mengatur prioritas, dan menjaga visual tetap sesuai identitas organisasi.</p>
+        </div>
+      </div>
+
+      <div class="ticket" data-fade>
+        <div class="ticket-head">
+          <span>Job ticket</span>
+          <span class="cmyk" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        </div>
+        <dl>
+          <div><dt>Nama</dt><dd>Ahmad Fathir Anafi</dd></div>
+          <div><dt>Studi</dt><dd>Teknik Grafika &amp; Penerbitan, PNJ · IPK 3.74</dd></div>
+          <div><dt>Fokus</dt><dd>Social media, editorial, poster, 3D</dd></div>
+          <div><dt>Software</dt><dd>Adobe Photoshop, Adobe InDesign, Affinity Designer</dd></div>
+          <div><dt>Cetak</dt><dd>Prepress, offset, flexografi, color management</dd></div>
+          <div><dt>Lainnya</dt><dd>UI/UX design, layouting</dd></div>
+          <div><dt>Bahasa</dt><dd>Indonesia (fasih), Inggris (menengah), Arab (dasar)</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENGALAMAN ============ -->
+  <section class="section section-tight" id="pengalaman">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-fade>04 / Pengalaman</p>
+        <h2 class="sec-title" data-reveal>Perjalanan</h2>
+      </div>
+
+      <div class="jobs">
+        <details class="job" open>
+          <summary>
+            <span class="job-when">2026 — sekarang</span>
+            <span class="job-title">Badan Eksekutif Mahasiswa PNJ</span>
+            <span class="job-role">Divisi Desain Kreator</span>
+            <span class="job-plus" aria-hidden="true"></span>
+          </summary>
+          <div class="job-body"><ul>
+            <li>Membuat visual untuk konten media sosial BEM PNJ.</li>
+            <li>Mengembangkan konsep visual agar pesan lebih menarik dan mudah ditangkap.</li>
+            <li>Berkoordinasi dengan tim untuk menyesuaikan visual dengan identitas organisasi.</li>
+          </ul></div>
+        </details>
+        <details class="job">
+          <summary>
+            <span class="job-when">2026</span>
+            <span class="job-title">PENA Politeknik Negeri Jakarta</span>
+            <span class="job-role">Staff Divisi Kreatif</span>
+            <span class="job-plus" aria-hidden="true"></span>
+          </summary>
+          <div class="job-body"><ul><li>Membuat aset acara PENA 2026: calling sponsor, papan interaktif, dan konten feeds.</li></ul></div>
+        </details>
+        <details class="job">
+          <summary>
+            <span class="job-when">2025</span>
+            <span class="job-title">Pesantren Kosan (PESAN BISA)</span>
+            <span class="job-role">Tim Desainer</span>
+            <span class="job-plus" aria-hidden="true"></span>
+          </summary>
+          <div class="job-body"><ul><li>Membuat poster penyambutan mahasantri baru dan kampanye donasi buka puasa.</li></ul></div>
+        </details>
+        <details class="job">
+          <summary>
+            <span class="job-when">Okt 2024 — Jan 2025</span>
+            <span class="job-title">Kantor Pertanahan Kab. Bekasi</span>
+            <span class="job-role">Praktik Kerja Lapangan</span>
+            <span class="job-plus" aria-hidden="true"></span>
+          </summary>
+          <div class="job-body"><ul>
+            <li>Membantu proses administrasi penyelesaian berkas tanah.</li>
+            <li>Menulis kode dan nomor penyelesaian berkas sesuai prosedur.</li>
+            <li>Memeriksa nomor berkas.</li>
+          </ul></div>
+        </details>
+        <details class="job">
+          <summary>
+            <span class="job-when">2024 — 2025</span>
+            <span class="job-title">OSIS SMK Madinatul Quran</span>
+            <span class="job-role">Divisi Multimedia</span>
+            <span class="job-plus" aria-hidden="true"></span>
+          </summary>
+          <div class="job-body"><ul>
+            <li>Membuat visual media sosial sekolah, termasuk poster PPDB 2024 dan feed MPLS.</li>
+            <li>Membuat animasi logo sekolah.</li>
+            <li>Mendokumentasikan acara dan momen penting di sekolah.</li>
+          </ul></div>
+        </details>
+      </div>
+
+      <div class="certs">
+        <div>
+          <p class="eyebrow">Sertifikasi &amp; pelatihan</p>
+          <ul class="cert-list">
+            <li><span>Mastering UI/UX<small>Build With Angga</small></span><em>2025</em></li>
+            <li><span>Kompetisi Junior Graphic Designer<small>Sertifikat kompetisi</small></span><em>2025</em></li>
+            <li><button class="cert-link" data-post="serti" data-index="0">Panitia Kuliah Umum TRCG3D<small>The Future of Printing · lihat sertifikat ↗</small></button><em>2026</em></li>
+            <li><span>Praktik Kerja Lapangan<small>Badan Pertanahan Nasional</small></span><em>2025</em></li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow">Pendidikan</p>
+          <ul class="cert-list">
+            <li><span>Politeknik Negeri Jakarta<small>Teknik Grafika &amp; Penerbitan · IPK 3.74</small></span><em>2025 —</em></li>
+            <li><span>SMK Madinatul Quran<small>OSIS Divisi Multimedia</small></span><em>— 2025</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ KONTAK ============ -->
+<footer class="contact" id="kontak">
+  <div class="wrap">
+    <p class="eyebrow">05 / Kontak</p>
+    <a class="big-cta" href="mailto:ahmadfathiranafi@gmail.com" data-cursor="Kirim email">
+      <span class="big-line"><span class="bl-in"><span>Ayo bikin</span></span></span>
+      <span class="big-line"><span class="bl-in"><span>sesuatu<em>↗</em></span></span></span>
+    </a>
+
+    <div class="contact-grid">
+      <div class="channels">
+        <div class="channel">
+          <span class="eyebrow">Email</span>
+          <div class="row"><a href="mailto:ahmadfathiranafi@gmail.com">ahmadfathiranafi@gmail.com</a><button class="copy" type="button" data-copy="ahmadfathiranafi@gmail.com">Salin</button></div>
+        </div>
+        <div class="channel">
+          <span class="eyebrow">WhatsApp</span>
+          <div class="row"><a href="https://wa.me/6283814946726" target="_blank" rel="noopener">0838 1494 6726</a><button class="copy" type="button" data-copy="083814946726">Salin</button></div>
+        </div>
+        <div class="channel">
+          <span class="eyebrow">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/fathir-anafi-101988278/" target="_blank" rel="noopener">in/fathir-anafi ↗</a>
+        </div>
+        <div class="channel">
+          <span class="eyebrow">Lokasi</span>
+          <span>Cikarang Selatan, Bekasi</span>
+        </div>
+      </div>
+
+      <div class="bizcard-wrap" aria-hidden="true">
+        <div class="bizcard" id="bizcard">
+          <div class="bc-face bc-front">
+            <svg class="bc-reg" viewBox="0 0 40 40"><circle cx="20" cy="20" r="11" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 2v36M2 20h36" stroke="currentColor" stroke-width="2"/></svg>
+            <div class="bc-name">Fathir<br>Anafi</div>
+            <div class="bc-role">Graphic Designer</div>
+            <div class="bc-bar"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="bc-face bc-back">
+            <div class="bc-full">Ahmad Fathir Anafi</div>
+            <ul>
+              <li>ahmadfathiranafi@gmail.com</li>
+              <li>0838 1494 6726</li>
+              <li>in/fathir-anafi</li>
+              <li>Cikarang Selatan, Bekasi</li>
+            </ul>
+            <div class="bc-foot">Teknik Grafika &amp; Penerbitan · PNJ</div>
+          </div>
+        </div>
+        <p class="bc-spec"><span>Kartu nama · 90 × 55 mm</span><span>Arahkan kursor untuk membalik</span></p>
+      </div>
+    </div>
+
+    <div class="foot">
+      <span>© 2026 Ahmad Fathir Anafi</span>
+      <span class="cmyk" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <a href="#top">Kembali ke atas ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ POST VIEWER ============ -->
+<div class="pv" id="pv" role="dialog" aria-modal="true" aria-label="Postingan" hidden>
+  <div class="pv-backdrop" data-close></div>
+  <div class="pv-bar">
+    <button class="pv-back" data-close aria-label="Kembali"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+    <span class="pv-bar-title" id="pvBarTitle">Postingan</span>
+  </div>
+  <div class="pv-body" id="pvBody"></div>
+  <button class="pv-post prev" id="pvPrev" aria-label="Postingan sebelumnya"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  <button class="pv-post next" id="pvNext" aria-label="Postingan berikutnya"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  <button class="pv-close" data-close aria-label="Tutup"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+  <p class="pv-hint">← → geser slide · ↑ ↓ ganti postingan · Esc tutup</p>
+</div>
+
+
+<!-- E-book reader: scroll = halaman paling atas terangkat dan hilang, berikutnya muncul -->
+<div class="rd" id="rd" role="dialog" aria-modal="true" aria-labelledby="rdTitle" hidden>
+  <div class="rd-scroll" id="rdScroll" tabindex="-1">
+    <div class="rd-track" id="rdTrack">
+      <div class="rd-stage">
+        <div class="rd-end" id="rdEnd">
+          <span class="rd-end-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M20 2v36M2 20h36" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <p class="rd-end-k">Selesai dibaca</p>
+          <p class="rd-end-t" id="rdEndT"></p>
+          <div class="rd-end-btns">
+            <button class="btn" id="rdAgain">Baca lagi ↺</button>
+            <button class="btn ghost" data-rd-close>Tutup</button>
+          </div>
+        </div>
+        <div class="rd-deck" id="rdPages"></div>
+      </div>
+    </div>
+  </div>
+  <header class="rd-bar">
+    <div class="rd-title"><b id="rdTitle">E-book</b><span id="rdSub"></span></div>
+    <button class="rd-x" data-rd-close aria-label="Tutup e-book"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+    <span class="rd-prog" aria-hidden="true"><i id="rdProg"></i></span>
+  </header>
+  <div class="rd-pill"><b id="rdNow">1</b><span>/</span><span id="rdTotal">1</span></div>
+  <p class="rd-hint" id="rdHint"><span class="rd-mouse" aria-hidden="true"></span>Scroll untuk membalik halaman</p>
+</div>
+<script src="assets/works.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
